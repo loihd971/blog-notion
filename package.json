@@ -12,6 +12,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.6",
     "open-props": "^1.5.10"
   }
 }
