@@ -1,0 +1,65 @@
+/* the props */
+@import "open-props/open-props.min.css";
+
+/* optional imports that use the props */
+@import "open-props/normalize.min.css";
+@import "open-props/buttons.min.css";
+
+/* individual imports */
+@import "open-props/indigo.min.css";
+@import "open-props/easings.min.css";
+@import "open-props/animations.min.css";
+@import "open-props/sizes.min.css";
+@import "open-props/gradients.min.css";
+/* see PropPacks for the full list */
+body {
+  display: grid;
+  place-content: center;
+  background-image: var(--gradient-15);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--size-fluid-4);
+  margin: var(--size-fluid-4);
+  max-width: 1500px;
+}
+
+.card {
+  flex: 0 1 400px;
+  box-shadow: var(--shadow-5);
+  padding: var(--size-fluid-3);
+  border-radius: var(--radius-3);
+  background-color: var(--violet-0);
+  display: grid;
+  gap: var(--size-2);
+}
+
+.card__heading{
+  color: var(--pink-4);
+}
+
+.card__content{
+  display: grid;
+  gap: var(--size-2);
+}
+
+.card__btn{
+  color: white;
+  background-color: var(--pink-4);
+  width: max-content;
+  padding: var(--size-2) var(--size-fluid-2);
+  margin-top: var(--size-fluid-1);
+  box-shadow: var(--shadow-4);
+  transition: ball 250ms var(--ease-squish-3);
+  border-radius: var(--radius-2);
+}
+
+.card__btn:is(:hover, :focus){
+  text-decoration: none;
+  box-shadow: none;
+  transform: scale(.95);
+}
